@@ -1,4 +1,3 @@
-'use client'
 import { createContext, useState } from "react";
 
 type Theme = 'dark' | ''
@@ -21,7 +20,7 @@ export function AppProvider(props: any){
 
     return(
         <AppContext.Provider value={{
-            theme: 'dark',
+            theme,
             ToggleTheme
         }}>
             {props.children}
